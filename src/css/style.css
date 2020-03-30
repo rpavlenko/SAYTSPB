@@ -343,8 +343,17 @@ a {
     margin-left: 381px;
     margin-right: 8.78rem; }
   .container__hero {
+    position: relative;
     margin-right: 8.78rem;
     margin-left: 376px; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-50 {
+  width: 50%; }
 
 .menu {
   display: flex;
@@ -421,8 +430,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 4rem;
-    left: 0;
+    left: 3.9rem;
     top: 149px; }
   .hero__title {
     margin: 0; }
@@ -445,10 +453,16 @@ a {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
     font-weight: 500; }
+  .hero__row {
+    position: relative; }
+  .hero__image {
+    position: absolute;
+    top: 7.43rem;
+    right: -4.68rem; }
 
 .social__item {
   display: flex;
-  margin-top: 1.81rem; }
+  margin-top: 2.2rem; }
 
 .social::before {
   content: '';
