@@ -344,7 +344,7 @@ a {
     margin-right: 8.78rem; }
   .container__hero {
     margin-right: 8.78rem;
-    margin-left: auto; }
+    margin-left: 376px; }
 
 .menu {
   display: flex;
@@ -423,11 +423,28 @@ a {
     align-items: center;
     margin-left: 4rem;
     left: 0;
-    bottom: 0;
-    max-width: 20px;
-    height: 100vh; }
+    top: 149px; }
   .hero__title {
     margin: 0; }
+  .hero__content {
+    padding-top: 19.88rem;
+    max-width: 38.88rem; }
+  .hero__text {
+    margin: 0;
+    margin-top: 2.23rem;
+    margin-left: 0.2rem;
+    margin-bottom: 2.15rem;
+    max-width: 35.288rem;
+    font-family: Ubuntu;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.813rem;
+    color: #2e2e2d; }
+  .hero__button {
+    padding: 1.06rem 2.55rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 500; }
 
 .social__item {
   display: flex;
@@ -438,3 +455,11 @@ a {
   width: 0.25rem;
   height: 38.75rem;
   background-color: #ff5a3c; }
+
+.title {
+  color: #323232;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3.575rem;
+  line-height: 4.75rem; }
+  .title--primary {
+    color: #ff5a3c; }
