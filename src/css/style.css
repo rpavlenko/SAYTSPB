@@ -340,11 +340,9 @@ a {
   margin: 0 auto; }
   .container__header {
     max-width: 1169px;
-    margin-left: 381px;
-    margin-right: 8.78rem; }
+    margin-left: 381px; }
   .container__hero {
-    position: relative;
-    margin-right: 8.78rem;
+    max-width: 1356px;
     margin-left: 376px; }
 
 .row {
@@ -352,8 +350,11 @@ a {
   align-items: flex-start;
   justify-content: space-between; }
 
+.col-45 {
+  width: 43%; }
+
 .col-50 {
-  width: 50%; }
+  width: 55%; }
 
 .menu {
   display: flex;
@@ -453,12 +454,8 @@ a {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
     font-weight: 500; }
-  .hero__row {
-    position: relative; }
   .hero__image {
-    position: absolute;
-    top: 7.43rem;
-    right: -4.68rem; }
+    padding-top: 7.43rem; }
 
 .social__item {
   display: flex;
