@@ -1,0 +1,31 @@
+.hero
+  position: relative
+  max-width: 1802px
+  height: 1131px
+  background: $light url('../img/hero-bg.png') no-repeat center / cover
+  // height: 100vh
+  color: $primary
+  &__social
+    position: absolute
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-left: 4rem
+    left: 0
+    bottom: 0
+    max-width: 20px
+    height: 100vh
+  &__title
+    margin: 0
+
+.social
+  &__item
+    display: flex
+    margin-top: 1.81rem
+  &::before
+    content: ''
+    width: 0.25rem
+    height: 38.75rem
+    background-color: $secondary  
+
