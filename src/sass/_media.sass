@@ -44,6 +44,8 @@
       width: 92%
       margin: auto
   .hero
+    margin-bottom: 10rem
+    padding-bottom: 10rem
     &__social
       left: 0.5rem
     &__title
@@ -65,19 +67,40 @@
   html
     font-size: 13px
   .hero
+    margin-bottom: 3rem
+    padding-bottom: 3rem  
     &__social
-      display: none  
+      display: none
+  .video
+    &__play
+      margin-top: 22rem
+      max-width: 15%
+      max-height: 15%
 @media screen and (max-width:  885px)
   .menu
     &__nav
       display: none
+@media screen and (max-width: 830px)
+  .statistics
+    &__title
+      font-size: 2.5rem
+    &__description
+      font-size: 0.9rem
 @media screen and (max-width:  576px)
   .contacts
     &__button
       display: none
-  .hero
     &__title
       max-width: 32.6rem
+  .statistics
+    &__data
+      padding-top: 1rem
+      padding-bottom: 1rem
+      background: $light url('../img/stats.png') no-repeat center / contain
+    &__item
+      width: 14rem
+      margin-right: 0
+  #player  
 @media screen and (max-width:  514px)
   html
     font-size: 12px
@@ -85,11 +108,25 @@
   html
     font-size: 11px   
   .hero
-    background: $light
     height: auto
+    background: $light
     font-size: 12px
     &__content
+      margin-left: 2rem
       padding-top: 10rem
+  .statistics
+    padding-top: 0
+    &__wrap
+      margin-top: 0 
+  .video
+    &__play
+      margin-top: 24rem
+      width: 50px
+      height: 50px   
+@media screen and (max-width:  418px)
+  .statistics
+    &__item
+      width: 10rem      
 @media screen and (max-width:  407px)
   html
     font-size: 10px
@@ -99,6 +136,8 @@
     &__title
       font-size: 2.5rem
       max-width: 25rem  
+    &__content
+      margin-left: 0rem  
 @media screen and (max-width:  407px)
   .hero   
     &__title
