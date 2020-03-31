@@ -322,6 +322,45 @@ a {
 
 .section {
   padding: 60px 0; }
+  .section-title {
+    max-width: 805px;
+    margin: 0 auto; }
+    .section-title__heading {
+      margin-bottom: 2rem;
+      text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2.625rem;
+      font-weight: 700;
+      line-height: 2.333rem;
+      color: #2c2c2d; }
+    .section-title__description {
+      font-family: 'Ubuntu', sans-serif;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.375rem;
+      color: #2c2c2d; }
+
+.card__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2.333rem;
+  color: #2c2c2d; }
+
+.card__description {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.375rem;
+  color: #454646; }
+
+.card__image {
+  margin-bottom: 0.75rem; }
+  .card__image--small {
+    padding-top: 0.7rem;
+    margin-bottom: 0.7rem; }
+  .card__image--smallest {
+    margin-bottom: 1rem; }
 
 .button {
   padding: 0.8rem 1.875rem 0.9rem 2rem;
@@ -349,17 +388,22 @@ a {
     width: 100%; }
   .container__statistics {
     max-width: 100%; }
+  .container__advantages {
+    max-width: 1098px;
+    width: 100%; }
 
 .row {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
-.col-45 {
-  width: 43%; }
-
-.col-50 {
-  width: 55%; }
+.col {
+  flex-basis: 26%; }
+  .col-45 {
+    width: 43%; }
+  .col-50 {
+    width: 55%; }
 
 .menu {
   display: flex;
@@ -482,49 +526,52 @@ a {
 .title--primary {
   color: #ff5a3c; }
 
-.statistics {
-  padding-bottom: 0; }
-  .statistics__wrap {
-    margin-top: -18.8rem;
-    position: relative; }
-  .statistics__data {
-    padding: 6.7rem 4.8375rem 7rem 3.225rem;
-    max-width: 73.063rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background: #ffffff url("../img/stats.png") no-repeat 45% 73%;
-    box-shadow: 0 0 1.375rem 0.313rem rgba(34, 34, 34, 0.05);
-    background-color: #ffffff; }
-  .statistics__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-right: -25px;
-    margin-bottom: 2rem; }
-  .statistics__title {
-    margin: 0;
-    margin-bottom: 0.55rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 3.875rem;
-    font-weight: 700;
-    color: #ff5a3c; }
-    .statistics__title--spacing {
-      letter-spacing: -0.3rem; }
-  .statistics__description {
-    font-size: 1.375rem;
-    font-weight: 700;
-    letter-spacing: -0.027rem;
-    text-align: center;
-    color: #383736; }
-  .statistics__video {
-    display: flex;
-    margin-top: -12.5rem;
-    height: 39.56rem;
-    background: #ffffff url("../img/video-bg.jpg") no-repeat center/cover; }
+.statistics__wrap {
+  margin-top: -18.8rem;
+  position: relative; }
+
+.statistics__data {
+  padding: 6.7rem 4.8375rem 5rem 3.225rem;
+  max-width: 73.063rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #ffffff url("../img/stats.png") no-repeat 45% 73%;
+  box-shadow: 0 0 1.375rem 0.313rem rgba(34, 34, 34, 0.05);
+  background-color: #ffffff; }
+
+.statistics__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: -25px;
+  margin-bottom: 2rem; }
+
+.statistics__title {
+  margin: 0;
+  margin-bottom: 0.55rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3.875rem;
+  font-weight: 700;
+  color: #ff5a3c; }
+  .statistics__title--spacing {
+    letter-spacing: -0.3rem; }
+
+.statistics__description {
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.027rem;
+  text-align: center;
+  color: #383736; }
+
+.statistics__video {
+  display: flex;
+  margin-top: -12.5rem;
+  height: 39.56rem;
+  background: #ffffff url("../img/video-bg.jpg") no-repeat center/cover; }
 
 .video__play {
   position: relative;
@@ -537,6 +584,23 @@ a {
   .video__play:hover {
     border-radius: 50%;
     box-shadow: 0 0 15px #ff5a3c; }
+
+.advantages {
+  padding-top: 0; }
+  .advantages__section-title {
+    margin-bottom: 4rem; }
+  .advantages__description {
+    margin-left: -0.525rem; }
+  .advantages__card {
+    margin-bottom: 2.23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 19.6rem;
+    text-align: center; }
+  .advantages__card-title {
+    margin-bottom: 0.325rem; }
 
 @media screen and (max-width: 1750px) {
   .container__header {
