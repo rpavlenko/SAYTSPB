@@ -330,6 +330,9 @@ a {
   border: none;
   outline: none;
   color: #ffffff; }
+  .button:hover {
+    color: #2c2c2d;
+    cursor: pointer; }
   .button--primary {
     font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
@@ -342,8 +345,8 @@ a {
     max-width: 1169px;
     margin-left: 381px; }
   .container__hero {
-    max-width: 1356px;
-    margin-left: 376px; }
+    max-width: 1169px;
+    width: 100%; }
 
 .row {
   display: flex;
@@ -398,8 +401,8 @@ a {
     .nav__item:hover:after {
       content: '';
       position: absolute;
-      left: 20%;
-      bottom: -0.475rem;
+      left: 19%;
+      bottom: -0.495rem;
       width: 60%;
       border-bottom: 2px solid #ff5a3c; }
 
@@ -434,17 +437,21 @@ a {
     left: 3.9rem;
     top: 149px; }
   .hero__title {
-    margin: 0; }
+    margin: 0;
+    color: #323232;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.575rem;
+    line-height: 4.75rem; }
   .hero__content {
     padding-top: 19.88rem;
+    margin-left: 3.8rem;
     max-width: 38.88rem; }
   .hero__text {
     margin: 0;
     margin-top: 2.23rem;
-    margin-left: 0.2rem;
     margin-bottom: 2.15rem;
     max-width: 35.288rem;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.813rem;
@@ -467,10 +474,68 @@ a {
   height: 38.75rem;
   background-color: #ff5a3c; }
 
-.title {
-  color: #323232;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 3.575rem;
-  line-height: 4.75rem; }
-  .title--primary {
-    color: #ff5a3c; }
+.title--primary {
+  color: #ff5a3c; }
+
+@media screen and (max-width: 1750px) {
+  .container__header {
+    margin-left: 320px; } }
+
+@media screen and (max-width: 1506px) {
+  .container__header {
+    margin-left: 180px; } }
+
+@media screen and (max-width: 1361px) {
+  .container__header {
+    margin-left: 120px; }
+  .menu__logo {
+    margin-right: 6rem; } }
+
+@media screen and (max-width: 1296px) {
+  .container__header {
+    margin-left: 60px; }
+  .hero__social {
+    left: 1rem; }
+  .hero__content {
+    margin-left: 4rem; }
+  .menu__logo {
+    margin-right: 4rem; }
+  .contacts__phone {
+    margin-right: 1rem; } }
+
+@media screen and (max-width: 1226px) {
+  .container__header {
+    width: 92%;
+    margin: auto; }
+  .hero__social {
+    left: 0.5rem; }
+  .hero__title {
+    font-size: 3rem;
+    line-height: 3rem;
+    max-width: 35rem; }
+  .hero__text {
+    max-width: 30rem; } }
+
+@media screen and (max-width: 1130px) {
+  html {
+    font-size: 15px; }
+  .menu__logo {
+    margin-right: 2rem; }
+  .contacts__phone {
+    margin-right: 0.5rem; } }
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 13px; }
+  .hero__social {
+    display: none; } }
+
+@media screen and (max-width: 885px) {
+  .menu__nav {
+    display: none; } }
+
+@media screen and (max-width: 576px) {
+  .contacts__button {
+    display: none; }
+  .hero__title {
+    max-width: 25rem; } }
