@@ -663,6 +663,8 @@ a {
 @media screen and (max-width: 991px) {
   html {
     font-size: 13px; }
+  .container__advantages {
+    width: 90%; }
   .hero {
     margin-bottom: 3rem;
     padding-bottom: 3rem; }
@@ -684,6 +686,8 @@ a {
     font-size: 0.9rem; } }
 
 @media screen and (max-width: 576px) {
+  .row {
+    justify-content: center; }
   .contacts__button {
     display: none; }
   .contacts__title {
@@ -694,7 +698,9 @@ a {
     background: #ffffff url("../img/stats.png") no-repeat center/contain; }
   .statistics__item {
     width: 14rem;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .advantages__card {
+    width: 20rem; } }
 
 @media screen and (max-width: 514px) {
   html {
