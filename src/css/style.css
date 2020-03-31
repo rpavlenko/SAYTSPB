@@ -483,17 +483,25 @@ a {
 
 @media screen and (max-width: 1506px) {
   .container__header {
-    margin-left: 180px; } }
+    margin-left: 220px; } }
 
-@media screen and (max-width: 1361px) {
+@media screen and (max-width: 1396px) {
   .container__header {
-    margin-left: 120px; }
+    margin-left: 180px; }
   .menu__logo {
-    margin-right: 6rem; } }
+    margin-right: 8rem; } }
+
+@media screen and (max-width: 1354px) {
+  .container__header {
+    margin-left: 160px; }
+  .menu__logo {
+    margin-right: 9rem; }
+  .hero__social {
+    left: 2rem; } }
 
 @media screen and (max-width: 1296px) {
   .container__header {
-    margin-left: 60px; }
+    margin-left: 100px; }
   .hero__social {
     left: 1rem; }
   .hero__content {
@@ -538,4 +546,31 @@ a {
   .contacts__button {
     display: none; }
   .hero__title {
+    max-width: 32.6rem; } }
+
+@media screen and (max-width: 514px) {
+  html {
+    font-size: 12px; } }
+
+@media screen and (max-width: 446px) {
+  html {
+    font-size: 11px; }
+  .hero {
+    background: #ffffff;
+    height: auto;
+    font-size: 12px; }
+    .hero__content {
+      padding-top: 10rem; } }
+
+@media screen and (max-width: 407px) {
+  html {
+    font-size: 10px; }
+  .container {
+    width: 90%; }
+  .hero__title {
+    font-size: 2.5rem;
     max-width: 25rem; } }
+
+@media screen and (max-width: 407px) {
+  .hero__title {
+    font-size: 2rem; } }
