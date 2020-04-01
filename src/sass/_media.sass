@@ -100,6 +100,7 @@
       max-width: 15%
       max-height: 15%
   .services
+    margin-bottom: 3rem
     &__row
       justify-content: center     
     &__card
@@ -108,12 +109,23 @@
         font-size: 1.625rem
       &-description
         font-size: 1rem
+  .price
+    height: auto      
 @media screen and (max-width:  885px)
   .menu
     &__nav
       display: none
   .price
-    
+    &__wrap
+      background: $light
+    &__form
+      width: 100%
+      justify-content: center
+    &__input-group
+      max-width: 100%  
+  .form
+    &__wrap
+      width: 100%      
 
 @media screen and (max-width: 830px)
   .statistics

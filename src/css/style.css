@@ -405,7 +405,7 @@ a {
 
 div.invalid {
   position: absolute;
-  bottom: -0.8rem;
+  bottom: -1rem;
   left: 0.1rem;
   font-size: 12px;
   color: tomato; }
@@ -965,18 +965,31 @@ input.invalid {
     margin-top: 22rem;
     max-width: 15%;
     max-height: 15%; }
-  .services__row {
-    justify-content: center; }
-  .services__card {
-    width: 22rem; }
-    .services__card-title {
-      font-size: 1.625rem; }
-    .services__card-description {
-      font-size: 1rem; } }
+  .services {
+    margin-bottom: 3rem; }
+    .services__row {
+      justify-content: center; }
+    .services__card {
+      width: 22rem; }
+      .services__card-title {
+        font-size: 1.625rem; }
+      .services__card-description {
+        font-size: 1rem; }
+  .price {
+    height: auto; } }
 
 @media screen and (max-width: 885px) {
   .menu__nav {
-    display: none; } }
+    display: none; }
+  .price__wrap {
+    background: #ffffff; }
+  .price__form {
+    width: 100%;
+    justify-content: center; }
+  .price__input-group {
+    max-width: 100%; }
+  .form__wrap {
+    width: 100%; } }
 
 @media screen and (max-width: 830px) {
   .statistics__title {
