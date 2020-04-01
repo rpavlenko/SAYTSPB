@@ -391,6 +391,9 @@ a {
   .container__advantages {
     max-width: 1098px;
     width: 100%; }
+  .container__services {
+    max-width: 1166px;
+    width: 100%; }
 
 .row {
   display: flex;
@@ -586,7 +589,9 @@ a {
     box-shadow: 0 0 15px #ff5a3c; }
 
 .advantages {
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 6.25rem;
+  margin-bottom: 5.76rem; }
   .advantages__section-title {
     margin-bottom: 4rem; }
   .advantages__description {
@@ -601,6 +606,47 @@ a {
     text-align: center; }
   .advantages__card-title {
     margin-bottom: 0.325rem; }
+
+.services {
+  height: 790px;
+  background: #ffffff url("../img/services-bg.png") no-repeat 69% center/cover; }
+  .services__wrap {
+    margin-top: -11.8rem; }
+  .services__section-title {
+    margin-bottom: 3.5rem; }
+  .services__heading {
+    margin-top: 0;
+    margin-bottom: 1.8rem; }
+  .services__card {
+    padding: 2.875rem 2.25rem 2.625rem 1.9375rem;
+    margin-bottom: 2.2625rem;
+    width: 22.1875rem;
+    border-radius: 0.313rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.625rem 0.188rem rgba(34, 34, 34, 0.05);
+    border-bottom: 5px solid transparent; }
+    .services__card--small {
+      padding-bottom: 2.4rem; }
+    .services__card:hover {
+      border-bottom: 5px solid #ff5a3c; }
+  .services__card-image {
+    margin-bottom: 1.1125rem; }
+    .services__card-image--small {
+      margin-bottom: 0.6125rem; }
+  .services__card-title {
+    margin-bottom: 1.2125rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 2.333rem; }
+  .services__card-description {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.583rem; }
+  .services__col--last {
+    margin-left: 3.0625rem;
+    margin-right: auto; }
 
 @media screen and (max-width: 1750px) {
   .container__header {
@@ -640,6 +686,8 @@ a {
   .container__header {
     width: 92%;
     margin: auto; }
+  .container__services {
+    width: 95%; }
   .hero {
     margin-bottom: 10rem;
     padding-bottom: 10rem; }
@@ -650,15 +698,31 @@ a {
       line-height: 3rem;
       max-width: 35rem; }
     .hero__text {
-      max-width: 30rem; } }
+      max-width: 30rem; }
+  .services__row {
+    justify-content: flex-start; }
+  .services__col {
+    margin-right: 1rem; }
+    .services__col--last {
+      margin-left: 0; }
+  .services__card {
+    width: 22rem; } }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1160px) {
   html {
     font-size: 15px; }
   .menu__logo {
     margin-right: 2rem; }
   .contacts__phone {
-    margin-right: 0.5rem; } }
+    margin-right: 0.5rem; }
+  .services__col {
+    margin-right: 0.9rem; }
+  .services__card {
+    width: 20rem; }
+    .services__card-title {
+      font-size: 1.4rem; }
+    .services__card-description {
+      font-size: 0.9rem; } }
 
 @media screen and (max-width: 991px) {
   html {
@@ -673,7 +737,15 @@ a {
   .video__play {
     margin-top: 22rem;
     max-width: 15%;
-    max-height: 15%; } }
+    max-height: 15%; }
+  .services__row {
+    justify-content: center; }
+  .services__card {
+    width: 22rem; }
+    .services__card-title {
+      font-size: 1.625rem; }
+    .services__card-description {
+      font-size: 1rem; } }
 
 @media screen and (max-width: 885px) {
   .menu__nav {

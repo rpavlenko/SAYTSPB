@@ -43,6 +43,8 @@
     &__header
       width: 92%
       margin: auto
+    &__services
+      width: 95%
   .hero
     margin-bottom: 10rem
     padding-bottom: 10rem
@@ -53,8 +55,17 @@
       line-height: 3rem
       max-width: 35rem
     &__text
-      max-width: 30rem
-@media screen and (max-width:  1130px)
+      max-width: 30rem   
+  .services
+    &__row
+      justify-content: flex-start 
+    &__col
+      margin-right: 1rem
+      &--last
+        margin-left: 0
+    &__card
+      width: 22rem
+@media screen and (max-width:  1160px)
   html
     font-size: 15px  
   .menu
@@ -62,7 +73,16 @@
       margin-right: 2rem        
   .contacts
     &__phone
-      margin-right: 0.5rem  
+      margin-right: 0.5rem
+  .services
+    &__col
+      margin-right: 0.9rem
+    &__card
+      width: 20rem
+      &-title
+        font-size: 1.4rem
+      &-description
+        font-size: 0.9rem
 @media screen and (max-width:  991px)
   html
     font-size: 13px
@@ -79,6 +99,15 @@
       margin-top: 22rem
       max-width: 15%
       max-height: 15%
+  .services
+    &__row
+      justify-content: center     
+    &__card
+      width: 22rem
+      &-title
+        font-size: 1.625rem
+      &-description
+        font-size: 1rem
 @media screen and (max-width:  885px)
   .menu
     &__nav
