@@ -377,28 +377,36 @@ a {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500; }
 
-.input {
-  border-radius: 0.625rem;
-  border: 0.063rem solid #b1b0b0;
-  padding: 0.7rem 5rem 0.7rem 0.825rem;
+.label {
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.17rem;
+  color: #939292; }
+
+.input::-webkit-input-placeholder {
   color: #878585; }
-  .input::-webkit-input-placeholder {
-    color: gray; }
-  .input::-moz-placeholder {
-    color: gray; }
-  .input:-ms-input-placeholder {
-    color: gray; }
-  .input::-ms-input-placeholder {
-    color: gray; }
-  .input::placeholder {
-    color: gray; }
-  .input::-moz-placeholder, .input :-moz-placeholder {
-    opacity: 1; }
+
+.input::-moz-placeholder {
+  color: #878585; }
+
+.input:-ms-input-placeholder {
+  color: #878585; }
+
+.input::-ms-input-placeholder {
+  color: #878585; }
+
+.input::placeholder {
+  color: #878585; }
+
+.input::-moz-placeholder, .input :-moz-placeholder {
+  opacity: 1; }
 
 div.invalid {
   position: absolute;
   bottom: -0.8rem;
-  left: 0.31rem;
+  left: 0.1rem;
   font-size: 12px;
   color: tomato; }
 
@@ -642,7 +650,6 @@ input.invalid {
     margin-bottom: 0.325rem; }
 
 .services {
-  height: 790px;
   background: #ffffff url("../img/services-bg.png") no-repeat 69% center/cover;
   margin-bottom: 10rem; }
   .services__wrap {
@@ -686,6 +693,74 @@ input.invalid {
 .price {
   height: 755px;
   background: #ffffff url("../img/price-bg.jpg") no-repeat center/cover; }
+  .price__wrap {
+    margin-top: 1.5rem;
+    max-width: 73.125rem;
+    background: #ffffff url("../img/price-bg.png") no-repeat center/cover; }
+  .price__title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 2.188rem;
+    color: #2c2c2d; }
+  .price__input-group {
+    position: relative;
+    margin-bottom: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem; }
+  .price__form {
+    width: 34.31rem;
+    display: flex;
+    flex-direction: column; }
+  .price__input {
+    border: 0;
+    border-bottom: 1px solid #939497; }
+    .price__input::-webkit-input-placeholder {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.125rem;
+      font-weight: normal;
+      line-height: 2.188rem;
+      color: #1e1e1e; }
+    .price__input::-moz-placeholder {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.125rem;
+      font-weight: normal;
+      line-height: 2.188rem;
+      color: #1e1e1e; }
+    .price__input:-ms-input-placeholder {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.125rem;
+      font-weight: normal;
+      line-height: 2.188rem;
+      color: #1e1e1e; }
+    .price__input::-ms-input-placeholder {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.125rem;
+      font-weight: normal;
+      line-height: 2.188rem;
+      color: #1e1e1e; }
+    .price__input::placeholder {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.125rem;
+      font-weight: normal;
+      line-height: 2.188rem;
+      color: #1e1e1e; }
+  .price__label {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.17rem;
+    margin-bottom: 0.5rem; }
+  .price__button {
+    align-self: center; }
+
+.form__wrap {
+  width: 45rem;
+  padding: 3rem 5rem 5.5rem 3.18rem; }
 
 .modal {
   opacity: 0;
@@ -725,13 +800,18 @@ input.invalid {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input-group {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.18rem; }
-  .modal__input:last-of-type {
-    margin-bottom: 0; }
+  .modal__input {
+    border-radius: 0.625rem;
+    border: 0.063rem solid #b1b0b0;
+    padding: 0.7rem 5rem 0.7rem 0.825rem;
+    color: #878585; }
+    .modal__input-group {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.18rem; }
+    .modal__input:last-of-type {
+      margin-bottom: 0; }
   .modal__button {
     align-self: center;
     max-width: 11.81rem;

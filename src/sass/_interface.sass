@@ -12,20 +12,22 @@
     font-size: 1rem
     font-family: 'Ubuntu', sans-serif
     font-weight: 500
-
+.label
+  text-transform: uppercase
+  font-family: 'Ubuntu', sans-serif
+  font-size: 1.125rem
+  font-weight: 300
+  line-height: 1.17rem
+  color: $label
 .input
-  border-radius: 0.625rem
-  border: 0.063rem solid #b1b0b0
-  padding: 0.7rem 5rem 0.7rem 0.825rem
-  color: $gray
   &::placeholder
-    color: gray
+    color: $gray
   &::-moz-placeholder, :-moz-placeholder 
     opacity: 1
 div.invalid
   position: absolute
   bottom: -0.8rem
-  left: 0.31rem
+  left: 0.1rem
   font-size: 12px
   color: tomato
 input

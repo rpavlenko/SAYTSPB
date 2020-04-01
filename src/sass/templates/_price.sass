@@ -1,4 +1,49 @@
 .price
   height: 755px
   background: $light url('../img/price-bg.jpg') no-repeat center / cover
+  &__wrap
+    // padding-top: 7rem
+    margin-top: 1.5rem
+    max-width: 73.125rem
+    background: $light url('../img/price-bg.png') no-repeat center / cover
+  &__title
+    text-align: center
+    margin-bottom: 3rem
+    font-size: 1.875rem
+    font-weight: 500
+    line-height: 2.188rem
+    color: $primary
+  &__input-group
+    position: relative
+    margin-bottom: 1.5625rem
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 37.142rem
+  &__form
+    width: 34.31rem
+    display: flex
+    flex-direction: column
+  &__input
+    border: 0
+    border-bottom: 1px solid #939497
+    &::placeholder
+      font-family: 'Ubuntu', sans-serif
+      font-size: 1.125rem
+      font-weight: normal
+      line-height: 2.188rem
+      color: $price-placeholder
+  &__label
+    font-family: 'Ubuntu', sans-serif
+    font-size: 1.125rem
+    font-weight: 300
+    line-height: 1.17rem
+    margin-bottom: 0.5rem
+  &__button
+    align-self: center   
+          
+.form__wrap
+  width: 45rem
+  padding: 3rem 5rem 5.5rem 3.18rem
   

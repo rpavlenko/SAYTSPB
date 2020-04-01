@@ -62,7 +62,6 @@ $(document).ready(function () {
         required: true,
         email: true
       },
-      policyAgreement: "required",
     },
     messages: {
       userName: {
@@ -72,6 +71,8 @@ $(document).ready(function () {
       },
       userPhone: "Телефон обязателен, 10 цифр",
     },
+
+    
     submitHandler: function (form) {
       $.ajax({
         type: "POST",
@@ -90,6 +91,85 @@ $(document).ready(function () {
       });
     }
   });
+
+
+  $('.price__form').validate({
+    errorElement: 'div',
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      },
+
+      userSite: {
+          required: true,
+          checkurl: true
+        },
+
+      userMessage: {
+        required: true,
+      },
+
+    },
+    
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв",
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      },
+      userMessage: {
+        required: "Заполните поле",
+      },
+      userSite: {
+        required: "Заполните поле",
+        url: "Введите корректный адрес сайта"
+      }, 
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "price-send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          modal.toggleClass('modal--visible');
+          modalForm.hide();
+          modalTitle.hide()
+          successDialog.removeClass('success__dialog--invisible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
+    }
+  });
+
+  // url validation
+  jQuery.validator.addMethod("checkurl", function (value, element) {
+    var url = $.validator.methods.url.bind(this);
+    return url(value, element) || url('http://' + value, element);
+  }, "Введите корректный адрес сайта");
+
+  // connect url validation to a css class
+  jQuery.validator.addClassRules({
+    checkurl: {
+      checkurl: true
+    }
+  });
+  
 
   // phone mask
   $('[type=tel]').mask('+7(000) 000-00-00', {
