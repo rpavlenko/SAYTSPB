@@ -12,3 +12,25 @@
     font-size: 1rem
     font-family: 'Ubuntu', sans-serif
     font-weight: 500
+
+.input
+  border-radius: 0.625rem
+  border: 0.063rem solid #b1b0b0
+  padding: 0.7rem 5rem 0.7rem 0.825rem
+  color: $gray
+  &::placeholder
+    color: gray
+  &::-moz-placeholder, :-moz-placeholder 
+    opacity: 1
+div.invalid
+  position: absolute
+  bottom: -0.8rem
+  left: 0.31rem
+  font-size: 12px
+  color: tomato
+input
+  &:focus
+    outline: none
+  &.invalid
+    outline: none
+    border-bottom: 1px solid tomato    

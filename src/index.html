@@ -30,7 +30,7 @@
             </nav>
             <div class="contacts menu__contacts">
               <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
-              <button class="button contacts__button button--primary">Заказать звонок</button>
+              <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
             </div>
           </div>
           <!-- /.menu -->
@@ -58,7 +58,7 @@
             ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
           </p>
-          <button class="button hero__button">Обратный звонок</button>
+          <button class="button hero__button" data-toggle="modal">Обратный звонок</button>
         </div>
         <!-- /.hero__content -->
       </div>
@@ -290,6 +290,60 @@
       <!-- /.container -->
     </section>
     <!-- /.section services -->
+
+    <div class="section price">
+      <div class="container container__price">
+        <div class="price__wrap">
+          <h3 class="price__title">Остались вопросы?</h3>
+          <form action="send.php" method="POST" class="form price__form">
+            <div class="input-group price__input-group">
+              <label for="price-user-name" class="label form__label label--light">Имя</label>
+              <input type="text" name="userName" class="input form__input price__input input--light" id="price-user-name"
+                placeholder="Как вас зовут:">
+            </div>
+            <div class="input-group price__input-group">
+              <label for="price-user-phone" class="label form__label label--light">Телефон</label>
+              <input type="tel" name="userPhone" class="input form__input price__input price-form__input input--light" id="price-user-phone"
+                placeholder="Ваш номер телефона:">
+            </div>
+            <div class="input-group price__input-group price__input-group--full-width">
+              <label for="price-user-question" class="label form__label label--light">Вопрос</label>
+              <input type="text" name="userQuestion" class="input form__input price__input input--light" id="price-user-question"
+                placeholder="Я хочу спросить:">
+            </div>
+            <button class="button button--primary price__button">Отправить</button>
+          </form>
+          <!-- /.form price__form -->
+        </div>
+        <!-- /.price-wrap -->
+      </div>
+      <!-- /.container container__price -->
+    </div>
+    <!-- /.section price -->
+
+    <div class="modal">
+      <div class="modal__dialog">
+        <button class="modal__close"></button>
+        <form action="send.php" method="POST" class="form modal__form">
+          <div class="input-group modal__input-group">
+            <!-- <label for="modal-user-name" class="label form__label label--light">Имя</label> -->
+            <input type="text" name="userName" class="input form__input modal__input input--light" id="modal-user-name" placeholder="Ваше имя:">
+          </div>
+          <div class="input-group modal__input-group">
+            <!-- <label for="modal-user-phone" class="label form__label label--light">Телефон</label> -->
+            <input type="tel" name="userPhone" class="input form__input modal__input modal-form__input input--light" id="modal-user-phone"
+              placeholder="Ваш номер телефона:">
+          </div>
+          <button class="button modal__button">Отправить</button>
+        </form>
+        <!-- /.form modal__form -->
+        <div class="success success__dialog">
+          <h3 class="succes__title">Заявка отправлена!</h3>
+        </div>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
 
   </main>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
