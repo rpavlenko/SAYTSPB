@@ -1,8 +1,7 @@
 <?php
 
   $userName = $_POST['userName'];
-  $userEmail = $_POST['userEmail'];
-  $userQuestion = $_POST['userQuestion'];
+  $userPhone = $_POST['userPhone'];
   $mail->CharSet = "UTF-8";
 
 // Load Composer's autoloader
