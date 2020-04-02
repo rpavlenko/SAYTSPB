@@ -8,7 +8,7 @@
     background: $light url('../img/price-bg.png') no-repeat center / cover
   &__title
     text-align: center
-    margin-bottom: 3rem
+    margin-bottom: 2.5rem
     font-size: 1.875rem
     font-weight: 500
     line-height: 2.188rem
@@ -21,6 +21,8 @@
     flex-wrap: wrap
     justify-content: space-between
     max-width: 37.142rem
+    &:last-of-type
+      margin-bottom: 2.68rem
   &__form
     width: 34.31rem
     display: flex
@@ -28,12 +30,11 @@
   &__input
     border: 0
     border-bottom: 1px solid #939497
-    &::placeholder
-      font-family: 'Ubuntu', sans-serif
+    &::placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-moz-placeholder, :-ms-input-placeholder
+      line-height: 2.188rem
       font-size: 1.125rem
       font-weight: normal
-      line-height: 2.188rem
-      color: $price-placeholder
+      color: $price-placeholder  
   &__label
     font-family: 'Ubuntu', sans-serif
     font-size: 1.125rem
@@ -41,9 +42,14 @@
     line-height: 1.17rem
     margin-bottom: 0.5rem
   &__button
-    align-self: center   
-          
-.form__wrap
-  width: 45rem
-  padding: 3rem 5rem 5.5rem 3.18rem
-  
+    align-self: center
+    border-radius: 1.563rem
+    padding: 0.4rem 2.875rem 0.4rem 2.6rem
+    font-family: 'Ubuntu', sans-serif
+    font-size: 1rem
+    font-weight: 500
+    line-height: 2.333rem
+.form
+  &__wrap
+    width: 45rem
+    padding: 3rem 6.7rem 6.5rem 3.18rem
