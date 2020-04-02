@@ -72,24 +72,6 @@ $(document).ready(function () {
       userPhone: "Телефон обязателен, 10 цифр",
     },
 
-    
-    submitHandler: function (form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          //  alert('Форма отправлена, мы свяжемся с вами через 10 минут')
-          $(form)[0].reset();
-          modalForm.hide();
-          modalTitle.hide()
-          successDialog.removeClass('success__dialog--invisible');
-        },
-        error: function (response) {
-          console.error('Ошибка запроса ' + response);
-        }
-      });
-    }
   });
 
 
@@ -138,23 +120,6 @@ $(document).ready(function () {
         url: "Введите корректный адрес сайта"
       }, 
     },
-    submitHandler: function (form) {
-      $.ajax({
-        type: "POST",
-        url: "price-send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          $(form)[0].reset();
-          modal.toggleClass('modal--visible');
-          modalForm.hide();
-          modalTitle.hide()
-          successDialog.removeClass('success__dialog--invisible');
-        },
-        error: function (response) {
-          console.error('Ошибка запроса ' + response);
-        }
-      });
-    }
   });
 
   // url validation
