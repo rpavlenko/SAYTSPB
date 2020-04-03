@@ -105,6 +105,9 @@
       justify-content: center     
     &__card
       width: 22rem
+      &:hover
+        border: 0.063rem solid #c9c8c8
+        margin-bottom: 2.2625rem
       &-title
         font-size: 1.625rem
       &-description
@@ -155,7 +158,27 @@
     &-menu
       &__logo
         &::after
-          width: 30rem          
+          width: 30rem
+  .news
+    padding-bottom: 1rem
+    &__card
+      margin-bottom: 3rem
+      padding-bottom: 0
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__text
+      margin-top: 1rem
+      position: static
+    &__button
+      position: static
+  .swiper
+    &-button
+      &-next, &-prev
+        &--news
+          bottom: 0
+          top: 75%
+          left: auto                      
 @media screen and (max-width:  576px)
   .row
     justify-content: center
@@ -176,7 +199,9 @@
     &__card
       width: 20rem
   .col-47
-    width: 80%      
+    width: 80%
+  .news
+    padding-top: 1rem        
 @media screen and (max-width:  514px)
   html
     font-size: 12px
@@ -202,7 +227,7 @@
 @media screen and (max-width:  418px)
   .statistics
     &__item
-      width: 10rem      
+      width: 10.3rem      
 @media screen and (max-width:  407px)
   html
     font-size: 10px

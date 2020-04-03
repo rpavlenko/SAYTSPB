@@ -1224,6 +1224,9 @@ input.invalid {
       justify-content: center; }
     .services__card {
       width: 22rem; }
+      .services__card:hover {
+        border: 0.063rem solid #c9c8c8;
+        margin-bottom: 2.2625rem; }
       .services__card-title {
         font-size: 1.625rem; }
       .services__card-description {
@@ -1267,7 +1270,24 @@ input.invalid {
     justify-content: center;
     align-items: center; }
   .footer-menu__logo::after {
-    width: 30rem; } }
+    width: 30rem; }
+  .news {
+    padding-bottom: 1rem; }
+    .news__card {
+      margin-bottom: 3rem;
+      padding-bottom: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .news__text {
+      margin-top: 1rem;
+      position: static; }
+    .news__button {
+      position: static; }
+  .swiper-button-next--news, .swiper-button-prev--news {
+    bottom: 0;
+    top: 75%;
+    left: auto; } }
 
 @media screen and (max-width: 576px) {
   .row {
@@ -1286,7 +1306,9 @@ input.invalid {
   .advantages__card {
     width: 20rem; }
   .col-47 {
-    width: 80%; } }
+    width: 80%; }
+  .news {
+    padding-top: 1rem; } }
 
 @media screen and (max-width: 514px) {
   html {
@@ -1313,7 +1335,7 @@ input.invalid {
 
 @media screen and (max-width: 418px) {
   .statistics__item {
-    width: 10rem; } }
+    width: 10.3rem; } }
 
 @media screen and (max-width: 407px) {
   html {
