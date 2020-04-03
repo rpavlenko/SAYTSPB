@@ -643,6 +643,73 @@
     </section>
     <!-- /.section news -->
 
+    <div class="section questions">
+      <div class="container container__questions">
+        <div class="questions__wrap">
+          <div class="row questions__row">
+            <div class="col-45 questions__col-45">
+              <h3 class="questions__title">Остались вопросы?
+                Напишите нам!
+                <br>Отправьте Ваше сообщение
+                через форму или <a class="questions__link" href="mailto:example@example.com">e-mail</a>.</h3>
+              <div class="questions__adress">
+                <div class="col-50 questions__text">
+                  <h5 class="questions__contacts-title">Адресс</h5>
+                  <p class="questions__contacts-adress">
+                    Город Санкт-Петербург <br>
+                    Улица Мурзинская дом 11 <br>
+                    <a href="tel:+78129921030" class="questions__phone">+7(812)&#8209;992&#8209;10&#8209;30</a><br>
+                    info@saytspb.ru</p>
+                </div>
+                <!-- /.col-50 questions__text -->
+                <div class="col-50 questions__text">
+                  <h5 class="questions__workdays">Рабочие дни</h5>
+                  <span class="questions__days">Понедельник-Пятница</span>
+                  <h5 class="questions__workdays"> Выходные</h5>
+                  <span class="questions__days">Суббота-Воскресенье</span>
+                  <p class="questions__hours"> 09:00-18:00</p>
+                </div>
+                <!-- /.col-50 questions__text -->
+              </div>
+            </div>
+            <div class="col-45 questions__col-45">
+              <div class="questions-form__wrap">
+                <form action="send.php" method="POST" class="form questions__form">
+                  <div class="input-group questions__input-group">
+                    <label for="questions-user-name" class="label form__label questions__label">Имя</label>
+                    <input type="text" name="userName" class="input form__input questions__input" id="questions-user-name" placeholder="Иван Иванов">
+                  </div>
+                  <div class="input-group questions__input-group">
+                    <label for="questions-user-email" class="label form__label questions__label">E-mail</label>
+                    <input type="email" name="userEmail" class="input form__input questions__input" id="questions-user-email"
+                      placeholder="ivanov@gmail.com">
+                  </div>
+
+                  <div class="input-group questions__input-group">
+                    <label for="questions-user-phone" class="label form__label questions__label">Телефон</label>
+                    <input type="tel" name="userPhone" class="input form__input questions__input questions-form__input" id="questions-user-phone"
+                      placeholder="+7 999 888-88-88">
+                  </div>
+
+                  <div class="input-group questions__input-group">
+                    <label for="questions-user-message" class="label form__label questions__label">СООБЩЕНИЕ</label>
+                    <input type="text" name="userMessage" class="input form__input questions__input" id="questions-user-message"
+                      placeholder="Введите Ваше сообщение">
+                  </div>
+                  <button class="button questions__button">Отправить</button>
+                </form>
+                <!-- /.form questions__form -->
+              </div>
+              <!-- /.questions-form__wrap -->
+            </div>
+          </div>
+        </div>
+        <!-- /.questions-wrap -->
+      </div>
+      <!-- /.container container__questions -->
+    </div>
+    <!-- /.section questions -->
+
     <section class="section footer">
       <div class="menu footer__menu">
         <a href="http://rpavlenko.ru/saytspb/">

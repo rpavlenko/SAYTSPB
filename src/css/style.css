@@ -434,7 +434,7 @@ div.invalid {
   bottom: -1rem;
   left: 0.1rem;
   font-size: 12px;
-  color: tomato; }
+  color: #2c2c2d; }
 
 input:focus {
   outline: none; }
@@ -468,6 +468,8 @@ input.invalid {
     max-width: 1046px; }
   .container__news {
     max-width: 1165px; }
+  .container__questions {
+    max-width: 1123px; }
 
 .row {
   display: flex;
@@ -477,6 +479,8 @@ input.invalid {
 
 .col {
   flex-basis: 26%; }
+  .col-25 {
+    width: 25%; }
   .col-40 {
     width: 40%; }
   .col-43 {
@@ -486,7 +490,7 @@ input.invalid {
   .col-47 {
     width: 47%; }
   .col-50 {
-    width: 55%; }
+    width: 50%; }
 
 .menu {
   display: flex;
@@ -1033,6 +1037,125 @@ input.invalid {
     bottom: 36px;
     max-width: 13.68rem;
     padding: 1.18rem 3.75rem 1.06rem 3.5rem; }
+
+.questions {
+  background: #ffffff url("../img/questions.png") no-repeat 100% 0/contain; }
+  .questions__wrap {
+    margin-top: 1.5rem;
+    max-width: 70.1875rem; }
+  .questions__title {
+    margin: 0;
+    margin-bottom: 3.0625rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #2c2c2d; }
+  .questions__link {
+    color: #ff5a3c;
+    border-bottom: 1px solid #ff5a3c;
+    padding-bottom: 2px; }
+  .questions__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .questions__contacts {
+    color: #1a1a1a; }
+    .questions__contacts-title {
+      margin: 0;
+      margin-bottom: 0.55rem;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500; }
+    .questions__contacts-adress {
+      margin: 0;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 2.15rem; }
+  .questions__phone {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-decoration: none;
+    color: #1a1a1a; }
+  .questions__workdays {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem; }
+  .questions__days {
+    display: block;
+    margin-bottom: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem; }
+  .questions__hours {
+    margin: 0;
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem; }
+  .questions__input-group {
+    position: relative;
+    margin-bottom: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem; }
+    .questions__input-group:last-of-type {
+      margin-bottom: 2.68rem; }
+  .questions__form {
+    width: 34.31rem;
+    display: flex;
+    flex-direction: column; }
+  .questions__input {
+    border: 0;
+    border-bottom: 1px solid #939497;
+    outline: none;
+    color: #413f3e;
+    background: #ff5a3c; }
+    .questions__input:-webkit-autofill {
+      background: #ff5a3c !important;
+      -webkit-box-shadow: inset 0 0 0 50px #ff5a3c !important;
+      -webkit-text-fill-color: #413f3e !important;
+      color: #413f3e !important; }
+    .questions__input::-webkit-input-placeholder {
+      line-height: 2.188rem;
+      font-size: 1.125rem;
+      font-weight: normal;
+      color: #413f3e;
+      background: #ff5a3c; }
+    .questions__input::placeholder, .questions__input ::-webkit-input-placeholder, .questions__input ::-moz-placeholder, .questions__input :-moz-placeholder, .questions__input :-ms-input-placeholder {
+      line-height: 2.188rem;
+      font-size: 1.125rem;
+      font-weight: normal;
+      color: #413f3e;
+      background: #ff5a3c; }
+  .questions__label {
+    margin-bottom: 0.875rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.17rem;
+    color: #ffffff; }
+  .questions__button {
+    align-self: center;
+    border-radius: 1.563rem;
+    padding: 0.4rem 2.875rem 0.4rem 2.6rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.333rem;
+    background: #ffffff;
+    color: #ff5a3c; }
+  .questions-form__wrap {
+    width: 45rem; }
+  .questions__adress {
+    display: flex;
+    justify-content: center; }
 
 .modal {
   opacity: 0;

@@ -122,6 +122,47 @@ $(document).ready(function () {
     },
   });
 
+  $('.questions__form').validate({
+    errorElement: 'div',
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userPhone: {
+        required: true,
+        mobileRU: true,
+      },
+      userMessage: {
+        required: true,
+      },
+    },
+
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв",
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      },
+      userMessage: {
+        required: "Заполните поле",
+      },
+      userPhone: "Телефон обязателен, 10 цифр",
+    },
+  });
+
   // url validation
   jQuery.validator.addMethod("checkurl", function (value, element) {
     var url = $.validator.methods.url.bind(this);
@@ -178,6 +219,9 @@ $(document).ready(function () {
   });
   $('.modal-form__input').mask('+7 (000) 000-00-00', {
     placeholder: "Ваш номер телефона"
+  });
+  $('.questions-form__input').mask('+7 (000) 000-00-00', {
+    placeholder: "+7 (999) 888-88-88"
   });
 
     var player;
