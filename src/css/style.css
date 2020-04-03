@@ -832,7 +832,9 @@ input.invalid {
   color: #707071; }
 
 .cases__list {
-  margin-top: 0; }
+  margin-top: 0;
+  padding-left: 1.2rem;
+  list-style-image: url("../img/list-icon.png"); }
 
 .cases__list-item {
   margin: 0;
@@ -844,7 +846,11 @@ input.invalid {
 
 .cases__button {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.1875rem 4.1875rem 0.9375rem 4rem; }
 
 .col-47 {
   padding-bottom: 1.05rem; }
@@ -1063,7 +1069,11 @@ input.invalid {
   .statistics__title {
     font-size: 2.5rem; }
   .statistics__description {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  .cases__row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 
 @media screen and (max-width: 576px) {
   .row {
@@ -1080,7 +1090,9 @@ input.invalid {
     width: 14rem;
     margin-right: 0; }
   .advantages__card {
-    width: 20rem; } }
+    width: 20rem; }
+  .col-47 {
+    width: 80%; } }
 
 @media screen and (max-width: 514px) {
   html {
@@ -1119,6 +1131,8 @@ input.invalid {
     max-width: 25rem; }
   .hero__content {
     margin-left: 0rem; }
+  .col-47 {
+    width: 70%; }
   div.invalid {
     font-size: 9px; } }
 
