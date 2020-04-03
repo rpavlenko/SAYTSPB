@@ -51,9 +51,34 @@ a
 .swiper
   &-button
     &-prev, &-next
-      color: #696b69
+      background-size: 3.3rem
+      width: 3.3rem
+      height: 2.68rem
+      outline: none
+      &::after
+        display: none
     &-prev
-      left: 0%  
+      left: 0
+      background: url('../img/prev.png') no-repeat center
+      &--news
+        left: 4px
+        bottom: 98px
+        top: auto
+        background: url('../img/arrow-prev.svg') no-repeat center
+        background-size: 3rem
+        &:hover
+          background: url('../img/arrow-prev-red.svg') no-repeat center
+          background-size: 3rem
     &-next
-      right: 0%  
-      
+      right: 0
+      background: url('../img/next.png') no-repeat center
+      &--news
+        left: 73px
+        bottom: 98px
+        top: auto
+        width: 4rem
+        background: url('../img/arrow-next.svg') no-repeat center
+        background-size: 3.5rem
+        &:hover
+          background: url('../img/arrow-next-red.svg') no-repeat center
+          background-size: 3.5rem

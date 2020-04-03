@@ -148,18 +148,29 @@ $(document).ready(function () {
     },
   })
 
-    var mySwiper2 = new Swiper('.feedback-container', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
+  var mySwiper2 = new Swiper('.feedback-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    })
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
   
+  var mySwiper3 = new Swiper('.news-container', {
+    // Optional parameters
+    // direction: 'horizontal',
+    loop: true,
+    spaceBetween: 20,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
 
   // phone mask
   $('[type=tel]').mask('+7(000) 000-00-00', {

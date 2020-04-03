@@ -363,13 +363,39 @@ a {
     margin-bottom: 1rem; }
 
 .swiper-button-prev, .swiper-button-next {
-  color: #696b69; }
+  background-size: 3.3rem;
+  width: 3.3rem;
+  height: 2.68rem;
+  outline: none; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
 
 .swiper-button-prev {
-  left: 0%; }
+  left: 0;
+  background: url("../img/prev.png") no-repeat center; }
+  .swiper-button-prev--news {
+    left: 4px;
+    bottom: 98px;
+    top: auto;
+    background: url("../img/arrow-prev.svg") no-repeat center;
+    background-size: 3rem; }
+    .swiper-button-prev--news:hover {
+      background: url("../img/arrow-prev-red.svg") no-repeat center;
+      background-size: 3rem; }
 
 .swiper-button-next {
-  right: 0%; }
+  right: 0;
+  background: url("../img/next.png") no-repeat center; }
+  .swiper-button-next--news {
+    left: 73px;
+    bottom: 98px;
+    top: auto;
+    width: 4rem;
+    background: url("../img/arrow-next.svg") no-repeat center;
+    background-size: 3.5rem; }
+    .swiper-button-next--news:hover {
+      background: url("../img/arrow-next-red.svg") no-repeat center;
+      background-size: 3.5rem; }
 
 .button {
   padding: 0.8rem 1.875rem 0.9rem 2rem;
@@ -440,6 +466,8 @@ input.invalid {
     max-width: 1111px; }
   .container__feedback {
     max-width: 1046px; }
+  .container__news {
+    max-width: 1165px; }
 
 .row {
   display: flex;
@@ -943,6 +971,68 @@ input.invalid {
     font-size: 1rem;
     font-weight: 500;
     color: #151515; }
+
+.news {
+  background: #e3fbdd; }
+  .news__card {
+    margin-bottom: 7rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5rem; }
+  .news__description {
+    margin-bottom: 3.1625rem; }
+  .news__text {
+    position: absolute;
+    left: 52.8%;
+    bottom: -2.4rem;
+    padding: 2.25rem 3.25rem 4.9375rem 2.5rem;
+    max-width: 34.375rem;
+    border-radius: 0.313rem;
+    background: #ffffff;
+    box-shadow: 0 0 0.625rem 0.188rem rgba(34, 34, 34, 0.05); }
+  .news__title {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.125rem;
+    color: #121111; }
+  .news__text-description {
+    margin: 0;
+    margin-bottom: 2.6875rem;
+    max-width: 28.625rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.646rem;
+    color: #201f1f; }
+  .news__image {
+    position: relative; }
+  .news__date {
+    position: absolute;
+    left: 1.3125rem;
+    top: 1.5rem; }
+  .news__calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-radius: 0.313rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.125rem; }
+  .news__month {
+    font-size: 0.875rem; }
+  .news__button {
+    display: block;
+    position: absolute;
+    bottom: 36px;
+    max-width: 13.68rem;
+    padding: 1.18rem 3.75rem 1.06rem 3.5rem; }
 
 .modal {
   opacity: 0;
