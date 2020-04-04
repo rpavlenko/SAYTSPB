@@ -205,7 +205,6 @@ $(document).ready(function () {
     // Optional parameters
     // direction: 'horizontal',
     loop: true,
-    spaceBetween: 20,
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
