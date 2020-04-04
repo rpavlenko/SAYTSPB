@@ -1448,6 +1448,18 @@ input.invalid {
         color: #ff5a3c;
         cursor: none;
         outline: none; }
+  .swiper-button-prev--news {
+    background-size: 2.8rem;
+    width: 2.8rem;
+    height: 2.68rem; }
+    .swiper-button-prev--news:hover {
+      background: url("../img/arrow-prev.svg") no-repeat center; }
+  .swiper-button-next--news {
+    background-size: 2.8rem;
+    width: 2.8rem;
+    height: 2.68rem; }
+    .swiper-button-next--news:hover {
+      background: url("../img/arrow-next.svg") no-repeat center; }
   .contacts__button:hover, .hero__button:hover, .price__button:hover, .cases__button:hover, .feedback__button:hover, .news__button:hover {
     color: #ffffff;
     cursor: none;
