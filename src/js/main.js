@@ -254,4 +254,17 @@ $(document).ready(function () {
         }, 1000);
       });
 
+      // burger
+      var menuButton = document.querySelector('.menu__button');
+      var menu = document.querySelector('.menu__nav');
+      var navItem = document.querySelectorAll('.nav__item');
+      var phone = document.querySelector('.hidden__phone');
+
+      menuButton.addEventListener('click', function () {
+            menuButton.classList.toggle('menu__button--active');
+            menu.classList.toggle('menu__nav--active');
+            $(navItem).css('padding-bottom', '10px');
+            phone.classList.toggle('hidden__phone-active');
+      })
+
 });

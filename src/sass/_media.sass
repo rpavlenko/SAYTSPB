@@ -162,6 +162,79 @@
   .menu
     &__nav
       display: none
+      &--active
+        display: flex
+        flex-direction: column
+        position: absolute
+        z-index: 3
+        padding-top: 25px
+        padding-bottom: 20px
+        right: 0
+        top: 0
+        background-color: $light
+        box-shadow: 0 0 0.625rem 0.188rem rgba(34, 34, 34, 0.05)
+        width: 100%
+    &__contacts
+      margin-right: 50px    
+    &__button
+      display: block
+      position: absolute
+      z-index: 3
+      right: 18px
+      top: 50px
+      width: 35px
+      height: 2px
+      background-color: $secondary
+      border: none
+      cursor: pointer
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        width: 35px
+        height: 2px
+        background-color: $secondary
+        margin-top: -7px
+        transition: transform 0.2s
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        width: 35px
+        height: 2px
+        background-color: $secondary
+        margin-top: 7px
+        transition: transform 0.2s
+      &--active
+        height: 0
+        &::before
+          transform: rotate(45deg)
+          margin: 0
+        &::after
+          transform: rotate(-45deg)
+          margin: 0
+  .nav
+    &__item
+      &:hover
+          &::after
+            border-bottom: none  
+      color: $secondary   
+      &--active
+        padding: 1rem
+  .hidden
+    &__phone
+        display: none    
+        &-active
+          display: flex
+          padding-top: 1rem
+          text-align: center
+          bottom: 0
+          color: $primary
+
   .price
     &__wrap
       background: $light
@@ -318,4 +391,7 @@
   .questions
     &__input
       &::placeholder
-        line-height: 10px      
+        line-height: 10px
+
+
+
