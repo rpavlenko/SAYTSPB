@@ -981,6 +981,7 @@ input.invalid {
       height: 1px;
       background-color: #3c3a3a; }
   .footer__copyright {
+    margin: 0;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
     font-weight: 500;
