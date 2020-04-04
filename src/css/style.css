@@ -440,8 +440,7 @@ input:focus {
   outline: none; }
 
 input.invalid {
-  outline: none;
-  border-bottom: 1px solid tomato; }
+  outline: none; }
 
 .container {
   max-width: 1355px;
@@ -483,6 +482,8 @@ input.invalid {
     width: 25%; }
   .col-40 {
     width: 40%; }
+  .col-42 {
+    width: 42%; }
   .col-43 {
     width: 43%; }
   .col-45 {
@@ -491,6 +492,8 @@ input.invalid {
     width: 47%; }
   .col-50 {
     width: 50%; }
+  .col-52 {
+    width: 52%; }
 
 .menu {
   display: flex;
@@ -894,6 +897,7 @@ input.invalid {
 
 .feedback {
   padding-top: 0;
+  padding-bottom: 5rem;
   background: #ffffff url("../img/feedback-bg.png") no-repeat center 28%/contain; }
   .feedback__link {
     color: #ff5a3c;
@@ -978,6 +982,8 @@ input.invalid {
 
 .news {
   background: #e3fbdd; }
+  .news__heading {
+    margin-top: 0; }
   .news__card {
     margin-bottom: 7rem;
     position: relative;
@@ -1039,15 +1045,16 @@ input.invalid {
     padding: 1.18rem 3.75rem 1.06rem 3.5rem; }
 
 .questions {
-  background: #ffffff url("../img/questions.png") no-repeat 100% 0/contain; }
+  background: #ffffff url("../img/questions-bg.png") no-repeat center center/cover; }
   .questions__wrap {
     margin-top: 1.5rem;
-    max-width: 70.1875rem; }
+    max-width: 70.1875rem;
+    margin: 0 auto; }
   .questions__title {
     margin: 0;
     margin-bottom: 3.0625rem;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 2.25rem;
+    font-size: 2.05rem;
     font-weight: 500;
     color: #2c2c2d; }
   .questions__link {
@@ -1104,19 +1111,21 @@ input.invalid {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 37.142rem; }
+    max-width: 37.142rem;
+    width: 100%; }
     .questions__input-group:last-of-type {
       margin-bottom: 2.68rem; }
   .questions__form {
-    width: 34.31rem;
+    max-width: 34.31rem;
     display: flex;
     flex-direction: column; }
   .questions__input {
     border: 0;
+    width: 100%;
+    max-width: 34.25rem;
     border-bottom: 1px solid #939497;
     outline: none;
-    color: #413f3e;
-    background: #ff5a3c; }
+    color: #413f3e; }
     .questions__input:-webkit-autofill {
       background: #ff5a3c !important;
       -webkit-box-shadow: inset 0 0 0 50px #ff5a3c !important;
@@ -1128,7 +1137,31 @@ input.invalid {
       font-weight: normal;
       color: #413f3e;
       background: #ff5a3c; }
-    .questions__input::placeholder, .questions__input ::-webkit-input-placeholder, .questions__input ::-moz-placeholder, .questions__input :-moz-placeholder, .questions__input :-ms-input-placeholder {
+    .questions__input::-moz-placeholder {
+      line-height: 2.188rem;
+      font-size: 1.125rem;
+      font-weight: normal;
+      color: #413f3e;
+      background: #ff5a3c; }
+    .questions__input:-ms-input-placeholder {
+      line-height: 2.188rem;
+      font-size: 1.125rem;
+      font-weight: normal;
+      color: #413f3e;
+      background: #ff5a3c; }
+    .questions__input::-ms-input-placeholder {
+      line-height: 2.188rem;
+      font-size: 1.125rem;
+      font-weight: normal;
+      color: #413f3e;
+      background: #ff5a3c; }
+    .questions__input::placeholder {
+      line-height: 2.188rem;
+      font-size: 1.125rem;
+      font-weight: normal;
+      color: #413f3e;
+      background: #ff5a3c; }
+    .questions__input::-moz-placeholder, .questions__input:-moz-placeholder {
       line-height: 2.188rem;
       font-size: 1.125rem;
       font-weight: normal;
@@ -1142,9 +1175,9 @@ input.invalid {
     line-height: 1.17rem;
     color: #ffffff; }
   .questions__button {
-    align-self: center;
+    align-self: flex-start;
     border-radius: 1.563rem;
-    padding: 0.4rem 2.875rem 0.4rem 2.6rem;
+    padding: 0.5rem 4.31rem 0.5rem 4.18rem;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
     font-weight: 500;
@@ -1152,7 +1185,7 @@ input.invalid {
     background: #ffffff;
     color: #ff5a3c; }
   .questions-form__wrap {
-    width: 45rem; }
+    max-width: 45rem; }
   .questions__adress {
     display: flex;
     justify-content: center; }
@@ -1314,6 +1347,8 @@ input.invalid {
 @media screen and (max-width: 1160px) {
   html {
     font-size: 15px; }
+  .container__questions {
+    max-width: 97%; }
   .menu__logo {
     margin-right: 2rem; }
   .contacts__phone {
@@ -1325,13 +1360,17 @@ input.invalid {
     .services__card-title {
       font-size: 1.4rem; }
     .services__card-description {
-      font-size: 0.9rem; } }
+      font-size: 0.9rem; }
+  .questions__title {
+    font-size: 1.95rem; } }
 
 @media screen and (max-width: 991px) {
   html {
     font-size: 13px; }
   .container__advantages, .container__feedback, .container__cases {
     width: 90%; }
+  .container__questions {
+    max-width: 100%; }
   .hero {
     margin-bottom: 3rem;
     padding-bottom: 3rem; }
@@ -1368,7 +1407,30 @@ input.invalid {
         display: unset; }
     .feedback__author {
       margin-left: auto;
-      max-width: 19rem; } }
+      max-width: 19rem; }
+  .questions {
+    background: #ff5a3c; }
+    .questions__row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .questions__col-42 {
+      width: 100%;
+      margin-bottom: 2rem;
+      background-color: #ffffff; }
+    .questions__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .questions__wrap {
+      max-width: 100%; }
+    .questions__title {
+      text-align: center;
+      max-width: 90%;
+      margin: auto;
+      margin-bottom: 2rem; }
+    .questions__contacts-adress {
+      text-align: center; } }
 
 @media screen and (max-width: 885px) {
   .menu__nav {
@@ -1465,6 +1527,8 @@ input.invalid {
     font-size: 10px; }
   .container {
     width: 90%; }
+    .container__questions {
+      width: 100%; }
   .hero__title {
     font-size: 2.5rem;
     max-width: 25rem; }
@@ -1480,3 +1544,23 @@ input.invalid {
 @media screen and (max-width: 407px) {
   .hero__title {
     font-size: 2rem; } }
+
+@media screen and (min-height: 100px) and (max-height: 475px) and (orientation: landscape) and (max-device-width: 1200px) {
+  .hero {
+    background: #ffffff;
+    height: auto; }
+    .hero__social {
+      display: none; }
+    .hero__title {
+      font-size: 2.5rem; }
+    .hero__content {
+      padding-top: 2rem;
+      margin-bottom: 3rem; }
+    .hero__text {
+      margin-top: 0.2rem;
+      margin-bottom: 0.8rem;
+      font-size: 1rem; }
+  .statistics__data {
+    margin-top: 8rem; }
+  .video__play {
+    margin-top: 150px; } }

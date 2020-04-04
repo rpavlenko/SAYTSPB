@@ -12,7 +12,7 @@
 
 <body>
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="header">
         <div class="container container__header">
           <div class="menu">
@@ -23,10 +23,10 @@
               </div>
             </a>
             <nav class="nav menu__nav">
-              <a href="#" class="nav__item">ПРОДВИЖЕНИЕ</a>
-              <a href="#" class="nav__item">АУДИТ</a>
-              <a href="#" class="nav__item">ЦЕНЫ</a>
-              <a href="#" class="nav__item">КОНТАКТЫ</a>
+              <a href="#hero" class="nav__item">ПРОДВИЖЕНИЕ</a>
+              <a href="#services" class="nav__item">АУДИТ</a>
+              <a href="#price" class="nav__item">ЦЕНЫ</a>
+              <a href="#contacts" class="nav__item">КОНТАКТЫ</a>
             </nav>
             <div class="contacts menu__contacts">
               <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
@@ -204,7 +204,7 @@
     </section>
     <!-- /.section advantages -->
 
-    <section class="section services">
+    <section class="section services" id="services">
       <div class="container container__services">
         <div class="services__wrap">
           <div class="section-title services__section-title">
@@ -294,7 +294,7 @@
     </section>
     <!-- /.section services -->
 
-    <div class="section price">
+    <div class="section price" id="price">
       <div class="container container__price">
         <div class="price__wrap">
           <div class="form__wrap">
@@ -643,15 +643,15 @@
     </section>
     <!-- /.section news -->
 
-    <div class="section questions">
+    <div class="section questions" id="contacts">
       <div class="container container__questions">
         <div class="questions__wrap">
           <div class="row questions__row">
-            <div class="col-45 questions__col-45">
+            <div class="col-42 questions__col-42">
               <h3 class="questions__title">Остались вопросы?
-                Напишите нам!
+                Напишите&nbsp;нам!
                 <br>Отправьте Ваше сообщение
-                через форму или <a class="questions__link" href="mailto:example@example.com">e-mail</a>.</h3>
+                через форму или <a class="questions__link" href="mailto:example@example.com">e&#8209;mail</a>.</h3>
               <div class="questions__adress">
                 <div class="col-50 questions__text">
                   <h5 class="questions__contacts-title">Адресс</h5>
@@ -672,7 +672,8 @@
                 <!-- /.col-50 questions__text -->
               </div>
             </div>
-            <div class="col-45 questions__col-45">
+
+            <div class="col-52 questions__col-52">
               <div class="questions-form__wrap">
                 <form action="send.php" method="POST" class="form questions__form">
                   <div class="input-group questions__input-group">
@@ -703,6 +704,7 @@
               <!-- /.questions-form__wrap -->
             </div>
           </div>
+          <!-- /.row questions__row -->
         </div>
         <!-- /.questions-wrap -->
       </div>
