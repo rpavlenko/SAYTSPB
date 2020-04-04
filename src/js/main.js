@@ -267,4 +267,20 @@ $(document).ready(function () {
             phone.classList.toggle('hidden__phone-active');
       })
 
+        // scroll up button
+        $("#button").on("click", function () {
+          $("html").animate({
+            scrollTop: 0
+          }, 1500);
+        });
+
+        var btn = $('#button');
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+          } else {
+            btn.removeClass('show');
+          }
+        });
+
 });
