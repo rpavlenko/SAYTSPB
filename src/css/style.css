@@ -1438,7 +1438,19 @@ input.invalid {
       margin: auto;
       margin-bottom: 2rem; }
     .questions__contacts-adress {
-      text-align: center; } }
+      text-align: center; }
+    .questions__button {
+      color: #ff5a3c;
+      cursor: none;
+      outline: none; }
+      .questions__button:hover {
+        color: #ff5a3c;
+        cursor: none;
+        outline: none; }
+  .contacts__button:hover, .hero__button:hover, .price__button:hover, .cases__button:hover, .feedback__button:hover, .news__button:hover {
+    color: #ffffff;
+    cursor: none;
+    outline: none; } }
 
 @media screen and (max-width: 885px) {
   .menu__nav {

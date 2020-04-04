@@ -157,7 +157,21 @@
       margin: auto
       margin-bottom: 2rem 
     &__contacts-adress
-      text-align: center         
+      text-align: center
+    &__button
+      color: $secondary
+      cursor: none
+      outline: none  
+      &:hover
+        color: $secondary
+        cursor: none
+        outline: none
+  .contacts, .hero, .price, .cases, .feedback, .news
+    &__button
+      &:hover
+        color: $light 
+        cursor: none
+        outline: none     
 @media screen and (max-width:  885px)
   .menu
     &__nav
