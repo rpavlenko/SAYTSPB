@@ -422,8 +422,11 @@ a {
   line-height: 1.17rem;
   color: #939292; }
 
-.input::-moz-placeholder, .input :-moz-placeholder {
-  opacity: 1; }
+.input {
+  font-size: 1.125rem;
+  font-weight: normal; }
+  .input::-moz-placeholder, .input :-moz-placeholder {
+    opacity: 1; }
 
 div.invalid {
   position: absolute;
@@ -815,6 +818,8 @@ input.invalid {
   .price__input {
     border: 0;
     border-bottom: 1px solid #939497;
+    font-size: 1.125rem;
+    font-weight: normal;
     color: #1e1e1e; }
     .price__input::-webkit-input-placeholder {
       line-height: 2.188rem;
@@ -829,8 +834,11 @@ input.invalid {
     .price__input:-webkit-autofill {
       background: #ffffff !important;
       -webkit-box-shadow: inset 0 0 0 50px #ffffff !important;
-      -webkit-text-fill-color: #413f3e !important;
-      color: #413f3e !important; }
+      -webkit-text-fill-color: #1e1e1e !important;
+      color: #1e1e1e !important; }
+      .price__input:-webkit-autofill::first-line {
+        font-size: 1.125rem;
+        font-family: 'Ubuntu', sans-serif; }
   .price__label {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.125rem;
@@ -1173,6 +1181,9 @@ input.invalid {
       -webkit-box-shadow: inset 0 0 0 50px #ff5a3c !important;
       -webkit-text-fill-color: #413f3e !important;
       color: #413f3e !important; }
+      .questions__input:-webkit-autofill::first-line {
+        font-size: 1.125rem;
+        font-family: 'Ubuntu', sans-serif; }
     .questions__input::-webkit-input-placeholder {
       line-height: 2.188rem;
       font-size: 1.125rem;
