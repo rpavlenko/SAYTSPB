@@ -1278,7 +1278,7 @@ input.invalid {
   .modal__input {
     border-radius: 0.625rem;
     border: 0.063rem solid #b1b0b0;
-    padding: 0.7rem 5rem 0.7rem 0.825rem;
+    padding: 0.7rem 4.6rem 0.7rem 0.825rem;
     color: #878585; }
     .modal__input-group {
       position: relative;
