@@ -829,6 +829,11 @@ input.invalid {
       font-size: 1.125rem;
       font-weight: normal;
       color: #1e1e1e; }
+    .price__input:-webkit-autofill {
+      background: #ffffff !important;
+      -webkit-box-shadow: inset 0 0 0 50px #ffffff !important;
+      -webkit-text-fill-color: #413f3e !important;
+      color: #413f3e !important; }
   .price__label {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.125rem;
@@ -1323,6 +1328,25 @@ input.invalid {
     cursor: pointer; }
   .modal-success__image {
     text-align: center; }
+
+.success__dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 23.18rem;
+  background: #ffffff;
+  color: #2c2c2d; }
+  .success__dialog--invisible {
+    display: none; }
+
+.success__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.357rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2.428rem; }
 
 @media screen and (max-width: 1750px) {
   .container__header {

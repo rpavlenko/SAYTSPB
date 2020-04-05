@@ -2,9 +2,6 @@
 
   $userName = $_POST['userName'];
   $userPhone = $_POST['userPhone'];
-  $userEmail = $_POST['userEmail'];
-  $userSite = $_POST['userSite'];
-  $userMessage = $_POST['userMessage'];
   $mail->CharSet = "UTF-8";
 
 // Load Composer's autoloader
@@ -37,10 +34,10 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Новая заявка с сайта';
-    $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}, его email: ${userEmail}. Его сайт: ${userSite}, его сообщение: ${userMessage}";
+    $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}";
 
     if ($mail->send()) {
-      header('Location: thanks.html');
+      echo "Message sent";
     } else {
       echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
     }

@@ -2,8 +2,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const modal = document.querySelector('.modal');
 
   var switchModal = function switchModal() {
+    // form reset
+    $('.form').trigger('reset');
+    
     modal.classList.toggle('modal--visible');
   };
+
 
   // close modal when click out of modal
   window.onclick = function (event) {
@@ -20,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       modal.classList.remove('modal--visible');
     }
   })
+
 
 });
 
@@ -71,7 +76,23 @@ $(document).ready(function () {
       },
       userPhone: "Телефон обязателен, 10 цифр",
     },
-
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          //  alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          $(form)[0].reset();
+          modalForm.hide();
+          modalTitle.hide();
+          successDialog.removeClass('success__dialog--invisible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
+    }
   });
 
 
@@ -99,7 +120,6 @@ $(document).ready(function () {
       userMessage: {
         required: true,
       },
-
     },
     
     messages: {
@@ -118,8 +138,25 @@ $(document).ready(function () {
       userSite: {
         required: "Заполните поле",
         url: "Введите корректный адрес сайта"
-      }, 
+      },
     },
+  submitHandler: function (form) {
+    $.ajax({
+      type: "POST",
+      url: "price-send.php",
+      data: $(form).serialize(),
+      success: function (response) {
+        $(form)[0].reset();
+        modal.toggleClass('modal--visible');
+        modalForm.hide();
+        modalTitle.hide();
+        successDialog.removeClass('success__dialog--invisible');
+      },
+      error: function (response) {
+        console.error('Ошибка запроса ' + response);
+      }
+    });
+  }
   });
 
   $('.questions__form').validate({
@@ -161,6 +198,25 @@ $(document).ready(function () {
       },
       userPhone: "Телефон обязателен, 10 цифр",
     },
+
+  submitHandler: function (form) {
+    $.ajax({
+      type: "POST",
+      url: "questions-send.php",
+      data: $(form).serialize(),
+      success: function (response) {
+        $(form)[0].reset();
+        modal.toggleClass('modal--visible');
+        modalForm.hide();
+        modalTitle.hide();
+        successDialog.removeClass('success__dialog--invisible');
+      },
+      error: function (response) {
+        console.error('Ошибка запроса ' + response);
+      }
+    });
+  }
+    
   });
 
   // url validation
@@ -282,5 +338,15 @@ $(document).ready(function () {
             btn.removeClass('show');
           }
         });
-
 });
+
+
+
+// form reset (working)
+// $(window).bind("pageshow", function () {
+//   var form = $('form');
+//   var form2 = $('.questions__form');
+//   // let the browser natively reset defaults
+//   form[0].reset();
+//   form2[0].reset();
+// });

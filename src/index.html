@@ -322,7 +322,7 @@
         <div class="price__wrap">
           <div class="form__wrap">
             <h3 class="price__title">Узнать стоимость</h3>
-            <form action="send.php" method="POST" onsubmit="ym('61624888', 'reachGoal', 'form'); return true;" class="form price__form">
+            <form action="price-send.php" method="POST" onsubmit="ym('61624888', 'reachGoal', 'form'); return true;" class="form price__form" id="form">
               <div class="input-group price__input-group">
                 <label for="price-user-name" class="label form__label price__label">Имя</label>
                 <input type="text" name="userName" class="input form__input price__input" id="price-user-name" placeholder="Иван Иванов">
@@ -697,7 +697,8 @@
 
             <div class="col-52 questions__col-52">
               <div class="questions-form__wrap">
-                <form action="send.php" method="POST" onsubmit="ym('61624888', 'reachGoal', 'form'); return true;" class="form questions__form">
+                <form action="questions-send.php" method="POST" onsubmit="ym('61624888', 'reachGoal', 'form'); return true;" class="form questions__form"
+                  id="form2">
                   <div class="input-group questions__input-group">
                     <label for="questions-user-name" class="label form__label questions__label">Имя</label>
                     <input type="text" name="userName" class="input form__input questions__input" id="questions-user-name" placeholder="Иван Иванов">
@@ -751,7 +752,7 @@
     <div class="modal">
       <div class="modal__dialog">
         <button class="modal__close"></button>
-        <form action="send.php" method="POST" onsubmit="ym('61624888', 'reachGoal', 'form'); return true;" class="form modal__form">
+        <form action="send.php" method="POST" onsubmit="ym('61624888', 'reachGoal', 'form'); return true;" class="form modal__form" id="form">
           <div class="input-group modal__input-group">
             <input type="text" name="userName" class="input form__input modal__input input--light" id="modal-user-name" placeholder="Ваше имя:">
           </div>
@@ -761,6 +762,10 @@
           </div>
           <button class="button modal__button">Отправить</button>
         </form>
+        <!-- /.form modal__form -->
+        <div class="success success__dialog">
+          <h3 class="succes__title">Заявка отправлена!</h3>
+        </div>
       </div>
       <!-- /.modal__dialog -->
     </div>

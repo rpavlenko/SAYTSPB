@@ -40,7 +40,7 @@ try {
     $mail->Body    = "Имя пользователя: ${userName}, его email: ${userEmail}. Его сайт: ${userSite}, его сообщение: ${userMessage}";
 
     if ($mail->send()) {
-      header('Location: thanks.html');
+      echo "Message sent";
     } else {
       echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
     }
