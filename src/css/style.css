@@ -422,12 +422,6 @@ a {
   line-height: 1.17rem;
   color: #939292; }
 
-.input::-webkit-input-placeholder {
-  color: #878585; }
-
-.input::placeholder, .input ::-webkit-input-placeholder, .input ::-moz-placeholder, .input :-moz-placeholder, .input :-ms-input-placeholder {
-  color: #878585; }
-
 .input::-moz-placeholder, .input :-moz-placeholder {
   opacity: 1; }
 
@@ -820,7 +814,8 @@ input.invalid {
     flex-direction: column; }
   .price__input {
     border: 0;
-    border-bottom: 1px solid #939497; }
+    border-bottom: 1px solid #939497;
+    color: #1e1e1e; }
     .price__input::-webkit-input-placeholder {
       line-height: 2.188rem;
       font-size: 1.125rem;

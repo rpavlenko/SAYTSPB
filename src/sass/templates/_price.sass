@@ -30,6 +30,7 @@
   &__input
     border: 0
     border-bottom: 1px solid #939497
+    color: $price-placeholder
     &::placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-moz-placeholder, :-ms-input-placeholder
       line-height: 2.188rem
       font-size: 1.125rem
@@ -38,8 +39,8 @@
     &:-webkit-autofill
       background: $light !important
       -webkit-box-shadow: inset 0 0 0 50px $light !important
-      -webkit-text-fill-color: #413f3e !important
-      color: #413f3e !important    
+      -webkit-text-fill-color: $price-placeholder !important
+      color: $price-placeholder !important    
   &__label
     font-family: 'Ubuntu', sans-serif
     font-size: 1.125rem
