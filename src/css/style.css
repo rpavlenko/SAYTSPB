@@ -407,6 +407,8 @@ a {
   .button:hover {
     color: #2c2c2d;
     cursor: pointer; }
+  .button::-moz-focus-inner {
+    border: 0; }
   .button--primary {
     font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
@@ -1180,38 +1182,32 @@ input.invalid {
       line-height: 2.188rem;
       font-size: 1.125rem;
       font-weight: normal;
-      color: #413f3e;
-      background: #ff5a3c; }
+      color: #413f3e; }
     .questions__input::-moz-placeholder {
       line-height: 2.188rem;
       font-size: 1.125rem;
       font-weight: normal;
-      color: #413f3e;
-      background: #ff5a3c; }
+      color: #413f3e; }
     .questions__input:-ms-input-placeholder {
       line-height: 2.188rem;
       font-size: 1.125rem;
       font-weight: normal;
-      color: #413f3e;
-      background: #ff5a3c; }
+      color: #413f3e; }
     .questions__input::-ms-input-placeholder {
       line-height: 2.188rem;
       font-size: 1.125rem;
       font-weight: normal;
-      color: #413f3e;
-      background: #ff5a3c; }
+      color: #413f3e; }
     .questions__input::placeholder {
       line-height: 2.188rem;
       font-size: 1.125rem;
       font-weight: normal;
-      color: #413f3e;
-      background: #ff5a3c; }
+      color: #413f3e; }
     .questions__input::-moz-placeholder, .questions__input:-moz-placeholder {
-      line-height: 10px;
+      line-height: 16px;
       font-size: 1.125rem;
       font-weight: normal;
-      color: #413f3e;
-      background: #ff5a3c; }
+      color: #413f3e; }
   .questions__label {
     margin-bottom: 0.875rem;
     font-family: 'Ubuntu', sans-serif;
