@@ -13,7 +13,7 @@
 
 <body>
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
+  <script>
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () {
         (m[i].a = m[i].a || []).push(arguments)
@@ -63,13 +63,13 @@
       <!-- /.header -->
       <div class="social hero__social">
         <a href="https://api.whatsapp.com/send?phone=78129921030" class="social__item">
-          <img src="./img/icon-call.png" alt="whatsapp" class="social__image">
+          <img src="#" data-src="./img/icon-call.png" alt="whatsapp" class="social__image lazyload">
         </a>
         <a href="viber://add?number=+78129921030" class="social__item">
-          <img src="./img/icon-viber.png" alt="viber" class="social__image">
+          <img src="#" data-src="./img/icon-viber.png" alt="viber" class="social__image lazyload">
         </a>
         <a href="mailto:example@example.com" class="social__item">
-          <img src="./img/icon-mail.png" alt="mail" class="social__image">
+          <img src="#" data-src="./img/icon-mail.png" alt="mail" class="social__image lazyload">
         </a>
       </div>
       <div class="container container__hero">
@@ -126,7 +126,7 @@
         <!-- /.statistics__wrap -->
         <div class="statistics__video video" id="player">
           <script src="https://www.youtube.com/iframe_api" async></script>
-          <img src="./img/play.png" alt="play-icon" class="video__play">
+          <img src="#" data-src="./img/play.png" alt="play-icon" class="video__play lazyload">
         </div>
       </div>
       <!-- /.container container__statistics -->
@@ -400,7 +400,7 @@
                     <h5 class="cases__text-title cases__text-title--dark">Статистика кол-ва переходов из поисковых <br>
                       систем</h5>
                     <p class="cases__text-source">Источник: Яндекс Метрика</p>
-                    <img src="./img/slide1.jpg" alt="Ремонт телефонов" class="swiper-slide__image">
+                    <img src="#" data-src="./img/slide1.jpg" alt="Ремонт телефонов" class="swiper-slide__image lazyload">
                   </div>
                   <!-- /.col-43 -->
                 </div>
@@ -435,7 +435,7 @@
                     <h5 class="cases__text-title cases__text-title--dark">Статистика кол-ва переходов из поисковых <br>
                       систем</h5>
                     <p class="cases__text-source">Источник: Яндекс Метрика</p>
-                    <img src="./img/slide1.jpg" alt="Ремонт телефонов" class="swiper-slide__image">
+                    <img src="#" data-src="./img/slide1.jpg" alt="Ремонт телефонов" class="swiper-slide__image lazyload">
                   </div>
                   <!-- /.col-43 -->
                 </div>
@@ -470,7 +470,7 @@
                     <h5 class="cases__text-title cases__text-title--dark">Статистика кол-ва переходов из поисковых <br>
                       систем</h5>
                     <p class="cases__text-source">Источник: Яндекс Метрика</p>
-                    <img src="./img/slide1.jpg" alt="Ремонт телефонов" class="swiper-slide__image">
+                    <img src="#" data-src="./img/slide1.jpg" alt="Ремонт телефонов" class="swiper-slide__image lazyload">
                   </div>
                   <!-- /.col-43 -->
                 </div>
@@ -520,7 +520,7 @@
                 </h4>
 
                 <div class="feedback__author">
-                  <img src="./img/author-photo.png" alt="" class="feedback__image">
+                  <img src="#" data-src="./img/author-photo.png" alt="" class="feedback__image lazyload">
                   <div class="feedback__info">
                     <h5 class="feedback__author-name">
                       Иванна Иванова
@@ -548,7 +548,7 @@
                 </h4>
 
                 <div class="feedback__author">
-                  <img src="./img/author-photo.png" alt="" class="feedback__image">
+                  <img src="#" data-src="./img/author-photo.png" alt="" class="feedback__image lazyload">
                   <div class="feedback__info">
                     <h5 class="feedback__author-name">
                       Иванна Иванова
@@ -576,7 +576,7 @@
                 </h4>
 
                 <div class="feedback__author">
-                  <img src="./img/author-photo.png" alt="" class="feedback__image">
+                  <img src="#" data-src="./img/author-photo.png" alt="" class="feedback__image lazyload">
                   <div class="feedback__info">
                     <h5 class="feedback__author-name">
                       Иванна Иванова
@@ -628,7 +628,7 @@
                       <span class="news__month">Апр</span>
                     </a>
                   </div>
-                  <img src="./img/news-slide-1.jpg" alt="Важнейшие факторы SEO в 2019 году">
+                  <img src="#" data-src="./img/news-slide-1.jpg" class="lazyload" alt="Важнейшие факторы SEO в 2019 году">
                 </div>
                 <!-- /.news__image -->
                 <div class="text news__text">
@@ -697,8 +697,8 @@
 
             <div class="col-52 questions__col-52">
               <div class="questions-form__wrap">
-                <form action="questions-send.php" method="POST" onsubmit="ym('61624888', 'reachGoal', 'form'); return true;" class="form questions__form"
-                  id="form2">
+                <form action="questions-send.php" method="POST" onsubmit="ym('61624888', 'reachGoal', 'form'); return true;"
+                  class="form questions__form" id="form2">
                   <div class="input-group questions__input-group">
                     <label for="questions-user-name" class="label form__label questions__label">Имя</label>
                     <input type="text" name="userName" class="input form__input questions__input" id="questions-user-name" placeholder="Иван Иванов">

@@ -917,16 +917,22 @@ input.invalid {
 
 .cases__list {
   margin-top: 0;
-  padding-left: 1.2rem;
-  list-style-image: url("../img/list-icon.png"); }
+  padding-left: 0.2rem;
+  list-style: none; }
 
 .cases__list-item {
   margin: 0;
+  vertical-align: middle;
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.75rem;
   color: #343435; }
+  .cases__list-item::before {
+    padding-right: 0.5rem;
+    content: url("../img/list-icon.png");
+    display: inline-block;
+    vertical-align: middle; }
 
 .cases__button {
   display: block;
@@ -935,7 +941,7 @@ input.invalid {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  padding: 1.1875rem 4.1875rem 0.9375rem 4rem; }
+  padding: 1rem 4.1875rem 1rem 4rem; }
   .cases__button::hover {
     color: #2c2c2d; }
 
@@ -957,7 +963,7 @@ input.invalid {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    padding: 1.1875rem 4.1875rem 0.9375rem 4rem; }
+    padding: 1rem 4.1875rem 1rem 4rem; }
     .feedback__button::hover {
       color: #2c2c2d; }
   .feedback__description {
@@ -1091,7 +1097,7 @@ input.invalid {
     position: absolute;
     bottom: 36px;
     max-width: 13.68rem;
-    padding: 1.18rem 3.75rem 1.06rem 3.5rem; }
+    padding: 1rem 3.75rem 1rem 3.5rem; }
 
 .questions {
   background: #ffffff url("../img/questions-bg-new.png") no-repeat center center/cover; }
@@ -1605,6 +1611,8 @@ input.invalid {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .cases__list-item {
+    font-size: 1.225rem; }
   .footer-menu__logo::after {
     width: 30rem; }
   .news {
@@ -1617,15 +1625,21 @@ input.invalid {
       align-items: center; }
     .news__text {
       margin-top: 1rem;
+      padding-bottom: 2rem;
       position: static; }
     .news__button {
-      position: static; }
+      position: static;
+      margin: 0 auto;
+      max-width: 100%;
+      text-align: center; }
   .feedback__card {
     max-width: 40rem; }
-  .swiper-button-next--news, .swiper-button-prev--news {
+  .swiper-button-next--news {
     bottom: 0;
-    top: 75%;
-    left: auto; } }
+    left: 55%; }
+  .swiper-button-prev--news {
+    bottom: 0;
+    left: 35%; } }
 
 @media screen and (max-width: 675px) {
   .feedback__card {

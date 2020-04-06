@@ -278,6 +278,10 @@
       flex-direction: column
       justify-content: center
       align-items: center
+    &__list
+      // list-style-position: inside
+      &-item
+        font-size: 1.225rem    
   .footer
     &-menu
       &__logo
@@ -293,19 +297,26 @@
       align-items: center
     &__text
       margin-top: 1rem
+      padding-bottom: 2rem
       position: static
     &__button
       position: static
+      margin: 0 auto
+      max-width: 100%
+      text-align: center
   .feedback
     &__card
       max-width: 40rem            
   .swiper
     &-button
-      &-next, &-prev
+      &-next
         &--news
           bottom: 0
-          top: 75%
-          left: auto              
+          left: 55%
+      &-prev
+        &--news
+          bottom: 0
+          left: 35%              
 @media screen and (max-width: 675px)  
   .feedback
     &__card

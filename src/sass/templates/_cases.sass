@@ -49,16 +49,24 @@
     line-height: 1.375rem
     color: $cases-text-source
   &__list
-    margin-top: 0  
-    padding-left: 1.2rem
-    list-style-image: url('../img/list-icon.png')
+    margin-top: 0
+    padding-left: 0.2rem  
+    // padding-left: 1.2rem
+    // list-style-image: url('../img/list-icon.png')
+    list-style: none
   &__list-item
     margin: 0
+    vertical-align: middle
     font-family: 'Ubuntu', sans-serif
     font-size: 1.125rem
     font-weight: 300
     line-height: 1.75rem
     color: $cases-text-description
+    &::before
+      padding-right: 0.5rem  
+      content: url('../img/list-icon.png')
+      display: inline-block
+      vertical-align: middle
   &__button
     display: block
     margin: 0 auto
@@ -66,7 +74,7 @@
     font-family: 'Ubuntu', sans-serif
     font-size: 1rem
     font-weight: 500  
-    padding: 1.1875rem 4.1875rem 0.9375rem 4rem
+    padding: 1rem 4.1875rem 1rem 4rem
     &::hover
       color: $primary  
 .col-47
